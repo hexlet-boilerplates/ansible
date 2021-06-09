@@ -1,7 +1,5 @@
-- name: Server Setup
-  hosts: all
+- hosts: all
   tasks:
-     - name: Leaving a mark
-       file:
+     - ansible.builtin.file:
          name: /tmp/ansible_was_here
          state: touch
