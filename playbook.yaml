@@ -1,0 +1,7 @@
+- name: Server Setup
+  hosts: all
+  tasks:
+     - name: Leaving a mark
+       file:
+         name: /tmp/ansible_was_here
+         state: touch
