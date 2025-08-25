@@ -1,5 +1,7 @@
-- hosts: all
+- name: Run all
+  hosts: all
   tasks:
-     - ansible.builtin.file:
-         name: /tmp/ansible_was_here
-         state: touch
+    - name: Create a file
+      ansible.builtin.file:
+        name: /tmp/ansible_was_here
+        state: file
