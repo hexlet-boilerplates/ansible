@@ -1,0 +1,13 @@
+version: 2
+multi-ecosystem-groups:
+  all-dependencies:
+    schedule:
+      interval: weekly
+updates:
+  # Только экшены: ansible-galaxy dependabot не поддерживает,
+  # а другого манифеста в репозитории нет
+  - package-ecosystem: github-actions
+    directory: /
+    patterns:
+      - "*"
+    multi-ecosystem-group: all-dependencies
