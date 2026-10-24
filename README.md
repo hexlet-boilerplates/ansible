@@ -1,9 +1,23 @@
 # ansible
 
+## Requirements
+
+Нужен [mise](https://mise.jdx.dev), он ставит ansible-core, ansible-lint и остальные инструменты из `mise.toml`.
+
+```bash
+mise install
+```
+
 ## Run
 
 ```bash
 make run-playbook
+```
+
+## Lint
+
+```bash
+make lint
 ```
 
 ---
