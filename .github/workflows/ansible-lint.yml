@@ -24,4 +24,4 @@ jobs:
           persist-credentials: false
       - uses: jdx/mise-action@v5
       - name: Run linters
-        run: make lint
+        run: mise exec -- hk check --all

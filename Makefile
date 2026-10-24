@@ -1,5 +1,6 @@
 install:
 	mise install
+	mise exec -- hk install --mise
 
 run-playbook:
 	ansible-playbook -i inventory.ini playbook.yaml

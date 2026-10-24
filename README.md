@@ -8,6 +8,8 @@
 make install
 ```
 
+`make install` ещё ставит git-хуки через hk.
+
 ## Run
 
 ```bash
