@@ -3,3 +3,8 @@ run-playbook:
 
 lint:
 	ansible-lint playbook.yaml
+	rumdl check .
+	typos
+	jactionlint
+
+.PHONY: run-playbook lint

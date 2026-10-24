@@ -11,3 +11,5 @@ updates:
     patterns:
       - "*"
     multi-ecosystem-group: all-dependencies
+    cooldown:
+      default-days: 7
