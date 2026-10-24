@@ -4,4 +4,5 @@
     - name: Create a file
       ansible.builtin.file:
         name: /tmp/ansible_was_here
-        state: file
+        state: touch
+        mode: "0644"
