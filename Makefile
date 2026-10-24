@@ -1,3 +1,6 @@
+install:
+	mise install
+
 run-playbook:
 	ansible-playbook -i inventory.ini playbook.yaml
 
@@ -7,4 +10,4 @@ lint:
 	typos
 	jactionlint
 
-.PHONY: run-playbook lint
+.PHONY: install run-playbook lint
